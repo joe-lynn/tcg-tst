@@ -31,6 +31,11 @@ var assetLibrary = {
                 stroke: 'black',
                 strokeWidth: 3
             });
+            var txt2 = new fabric.Text("1", {
+                fontSize:scale*0.15,
+                top: (y+scale*0.05)+scale*0.1,
+                left: (x+scale*0.15)+scale*0.12
+            });
             var tri2 = new fabric.Triangle({
                 top: y+scale*0.04,
                 left: x+scale*0.35,
@@ -42,6 +47,11 @@ var assetLibrary = {
                 centeredRotation: true
             });
             tri2.rotate(180);
+            var txt3 = new fabric.Text("3", {
+                fontSize:scale*0.15,
+                top: (y+scale*0.04)+scale*0.025,
+                left: (x+scale*0.35)+scale*0.12
+            });
             var tri3 = new fabric.Triangle({
                 top: y+scale*0.05,
                 left: x+scale*0.55,
@@ -51,6 +61,11 @@ var assetLibrary = {
                 stroke: 'black',
                 strokeWidth: 3,
                 centeredRotation: true
+            });
+            var txt4 = new fabric.Text("5", {
+                fontSize:scale*0.15,
+                top: (y+scale*0.05)+scale*0.1,
+                left: (x+scale*0.55)+scale*0.12
             });
             var rect2 = new fabric.Rect({
                 top : y+(scale+scale*0.5)*0.6,
@@ -62,26 +77,14 @@ var assetLibrary = {
                 strokeWidth: 3
             });
             var txt1 = new fabric.Text("Card text", {
+                fontSize:scale*0.1,
                 top: y+(scale+scale*0.5)*0.7,
-                left: x+scale*0.25
-            });
-            var txt2 = new fabric.Text("1", {
-                top: y+(scale*0.175),
-                left: x+scale*0.27
-            });
-            var txt3 = new fabric.Text("3", {
-                top: y+(scale*0.075),
-                left: x+scale*0.47
-            });
-            var txt4 = new fabric.Text("5", {
-                top: y+(scale*0.175),
-                left: x+scale*0.67
+                left: (x+scale*0.05)+scale*0.25
             });
             var cardGroup = new fabric.Group([rect, tri1, tri2, tri3, rect2, txt1, txt2, txt3, txt4], {
 
             });
             cardGroup.rotate(angleRotate);
-            cardGroup.on('object:selected', cardSelectHandler);
             canvas.add(cardGroup);
         }
     },
@@ -141,25 +144,25 @@ var assetLibrary = {
 
             var circle = new fabric.Circle({
                 left: x*.3,
-                top: y*0.025,
+                top: y*0.1,
                 radius: y*0.035,
                 fill: 'transparent',
                 stroke: 'black'
             });
             var txt3 = new fabric.Text("10", {
-                top: y*0.044,
+                top: y*0.119,
                 left: x*0.31
             });
 
             var circle2 = new fabric.Circle({
                 left: x*.3,
-                top: y*0.905,
+                top: y*0.83,
                 radius: y*0.035,
                 fill: 'transparent',
                 stroke: 'black'
             });
             var txt4 = new fabric.Text("10", {
-                top: y*0.926,
+                top: y*0.846,
                 left: x*0.31
             });
             var boardGroup = new fabric.Group([line1, line2, line3, path, path2, rect, txt1, rect2, txt2, circle, txt3, circle2, txt4], {
