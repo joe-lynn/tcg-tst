@@ -180,11 +180,11 @@ function cardSelectHandler(){
 
 function setup() {
     var canvas = new fabric.Canvas('canvas');
-    assetLibrary.card.draw(canvas, window.innerWidth*0.3, window.innerHeight*-0.15, window.innerWidth*0.075, 180);
-    assetLibrary.card.draw(canvas, window.innerWidth*0.38, window.innerHeight*-0.15, window.innerWidth*0.075, 180);
-    assetLibrary.card.draw(canvas, window.innerWidth*0.46, window.innerHeight*-0.15, window.innerWidth*0.075, 180);
-    assetLibrary.card.draw(canvas, window.innerWidth*0.54, window.innerHeight*-0.15, window.innerWidth*0.075, 180);
-    assetLibrary.card.draw(canvas, window.innerWidth*0.62, window.innerHeight*-0.15, window.innerWidth*0.075, 180);
+    assetLibrary.card.draw(canvas, window.innerWidth*0.3, window.innerHeight*-0.05, window.innerWidth*0.075, 180);
+    assetLibrary.card.draw(canvas, window.innerWidth*0.38, window.innerHeight*-0.05, window.innerWidth*0.075, 180);
+    assetLibrary.card.draw(canvas, window.innerWidth*0.46, window.innerHeight*-0.05, window.innerWidth*0.075, 180);
+    assetLibrary.card.draw(canvas, window.innerWidth*0.54, window.innerHeight*-0.05, window.innerWidth*0.075, 180);
+    assetLibrary.card.draw(canvas, window.innerWidth*0.62, window.innerHeight*-0.05, window.innerWidth*0.075, 180);
 
     assetLibrary.card.draw(canvas, window.innerWidth*0.3, window.innerHeight*0.93, window.innerWidth*0.075, 0);
     assetLibrary.card.draw(canvas, window.innerWidth*0.38, window.innerHeight*0.93, window.innerWidth*0.075, 0);
